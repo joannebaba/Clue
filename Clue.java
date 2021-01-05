@@ -59,7 +59,7 @@ class Clue
       
       // prints introduction screen
       System.out.println();
-      System.out.println("Welcome to Clue�");
+      System.out.println("Welcome to Clue™");
       System.out.println();
       System.out.println("It's midnight. Someone has just been murdered in Estate 141.");
       System.out.println("You and another person have been hired to solve the murder.");
@@ -76,7 +76,7 @@ class Clue
         for (k = 0; k < hand.length; k++) {
           // if user has card, check it off
           if (hand[k].equals(cards[j])) {
-            boxes[j] = "�";
+            boxes[j] = "•";
             k = cards.length;
           } else { // otherwise leave empty
             boxes[j] = "o";
@@ -93,7 +93,7 @@ class Clue
       System.out.println("In order to solve the mystery, you must travel around the Estate and start rumours.");
       System.out.println("The point of a rumour is to try and determine the answer to the mystery.");
       System.out.println("Once you enter a room, you must use the room you are in to start the rumour.");
-      System.out.println("For example, if you are in the Observatory, your rumour may be: �I think Green did it in the Observatory with the Candlestick.�");
+      System.out.println("For example, if you are in the Observatory, your rumour may be: “I think Green did it in the Observatory with the Candlestick.”");
       System.out.println("The other person will then try to disprove your rumour by revealing one evidence card from your rumour, regardless of how many they have.");
       System.out.println("If they do not have any of the cards from your rumour, they will not reveal a card.");
       System.out.println("For example, using the previous rumour, the other person may show you the Green evidence card.");
@@ -185,11 +185,11 @@ class Clue
               // updates Clue Sheet with user's deduction
               for (l = 0; l < cards.length; l++) {
                 // lets user know if card has already been checked off
-                if (deduction.equals(cards[l]) && boxes[l].equals("�")) {
+                if (deduction.equals(cards[l]) && boxes[l].equals("•")) {
                   System.out.println("Just so you know, that card has already been checked off. And you call yourself a detective. Unbelievable.");
                   l = cards.length;
                 } else if (deduction.equals(cards[l])) { // otherwise checks off card
-                  boxes[l] = "�";
+                  boxes[l] = "•";
                   l = cards.length;
                 }
               }
